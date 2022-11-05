@@ -17,10 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+Route::get('/pengguna', function(){
+    return view('admin/dataAnggota');
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/laporan', function(){
+    return view('admin/laporan');
+});
+
+Route::get('/adminProfil', function(){
+    return view('admin/profil');
+});
