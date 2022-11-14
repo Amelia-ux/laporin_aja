@@ -26,7 +26,7 @@ Route::get('/register', function(){
 });
 
 Route::get('/pengguna', function(){
-    return view('admin/dataAnggota');
+    return view('admin/dataPengguna');
 });
 
 Route::get('/laporan', function(){
@@ -35,4 +35,15 @@ Route::get('/laporan', function(){
 
 Route::get('/adminProfil', function(){
     return view('admin/profil');
+});
+
+Route::get('/userProfil', function(){
+    return view('user/userProfil');
+});
+Route::get('/riwayat', function(){
+    return view('user/riwayat');
+});
+
+Route::get('/buatLaporan', function(){
+    return view('user/buatLaporan');
 });

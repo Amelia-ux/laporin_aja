@@ -1,4 +1,4 @@
-@extends('main')
+@extends('user')
 
 @section('title', 'Profil')
 
@@ -18,7 +18,7 @@
                 Sayo Kravits
               </h5>
               <p class="mb-0 font-weight-bold text-sm">
-                Admin
+                Siswa
               </p>
             </div>
           </div>
